@@ -1,4 +1,4 @@
-import {customer_model} from "../model/customer_model";
+import {customer_model} from "../model/customer_model.js";
 
 var row_index = null;
 
@@ -10,7 +10,6 @@ const regMobile = new RegExp(sriLankanMobileNumberRegex);
 
 const loadCustomerData = () => {
     $('#customer-tbl-body').empty(); // make tbody empty
-
 
     const http = new XMLHttpRequest();
 
@@ -118,35 +117,26 @@ $("#save_customer[type='button']").on("click", () => {
 
                             } else {
                                 toastr.error("Invalid Contact Number...❌");
-                                return;
                             }
                         } else {
                             toastr.error("Contact Number is empty...❌");
-                            return;
                         }
                     } else {
                         toastr.error("Address is empty...❌");
-                        return;
                     }
                 } else {
                     toastr.error("Name is empty...❌");
-                    return;
                 }
             } else {
                 toastr.error("Invalid Customer ID...❌");
-                return;
             }
-
 
         } else {
             toastr.error("Customer ID is empty...❌");
-            return;
         }
-
 
     } else {
         toastr.error("Customer ID already exists...❌");
-
     }
 });
 
@@ -225,23 +215,18 @@ $("#update_customer[type='button']").on("click", () => {
 
                         } else {
                             toastr.error("Invalid Contact Number...❌");
-                            return;
                         }
                     } else {
                         toastr.error("Contact Number is empty...❌");
-                        return;
                     }
                 } else {
                     toastr.error("Address is empty...❌");
-                    return;
                 }
             } else {
                 toastr.error("Name is empty...❌");
-                return;
             }
         } else {
             toastr.error("Invalid Customer ID...❌");
-            return;
         }
     }
 })

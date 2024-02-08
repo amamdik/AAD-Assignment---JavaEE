@@ -46,9 +46,7 @@ $("#save_item[type='button']").on("click", () => {
     console.log(item_id);
     let validity = -1;
 
-
     if(validity===-1) {
-
 
         let desc = $("#desc").val();
         let price = $("#price").val();
@@ -200,27 +198,21 @@ $("#update_item[type='button']").on("click", () => {
                             toastr.success("Item successfully added...✅");
                         } else {
                             toastr.error("Invalid Quantity...❌");
-
                         }
                     } else {
                         toastr.error("Quantity is empty...❌");
-
                     }
                 } else {
                     toastr.error("Invalid Price...❌");
-
                 }
             } else {
                 toastr.error("Price is empty...❌");
-
             }
         } else {
             toastr.error("Description is empty...❌");
-
         }
     } else {
         toastr.error("Item ID is empty...❌");
-
     }
 
     // clear();
