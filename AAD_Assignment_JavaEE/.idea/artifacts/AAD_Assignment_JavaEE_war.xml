@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="AAD_Assignment_JavaEE.war">
+    <output-path>$PROJECT_DIR$</output-path>
+    <root id="root" />
+  </artifact>
+</component>
