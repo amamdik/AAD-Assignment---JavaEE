@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="470d19d8-8570-448a-9610-5a2132fa7245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/assests/css/customer_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assests/css/home_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assests/css/item_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assests/css/order_detail_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assests/css/order_section.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assests/img/order-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/controller/home_section_controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
     </list>
@@ -24,6 +19,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,8 +80,17 @@
       <option name="presentableId" value="Default" />
       <updated>1707333367458</updated>
       <workItem from="1707333368529" duration="91000" />
-      <workItem from="1707366934629" duration="10914000" />
+      <workItem from="1707366934629" duration="11541000" />
     </task>
+    <task id="LOCAL-00001" summary="frontend programming">
+      <option name="closed" value="true" />
+      <created>1707378571802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707378571802</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="frontend programming" />
+    <option name="LAST_COMMIT_MESSAGE" value="frontend programming" />
   </component>
 </project>
