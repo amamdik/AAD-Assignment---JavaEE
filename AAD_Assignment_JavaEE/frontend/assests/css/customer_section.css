@@ -1,0 +1,76 @@
+.customer {
+    position: relative;
+    height: 100vh;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.table.table-info {
+    cursor: pointer;
+}
+
+.customer > section:first-child {
+    height: 80vh;
+    position: absolute;
+    width: 40vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(to bottom, #2ab2f7 0%, #ffffff 100%);
+}
+
+.customer > section:first-child > h1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    margin: 0;
+}
+
+#customer_details > div > input {
+    width: 500px;
+}
+
+#customer_details {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+#customer_buttons {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 400px;
+    margin: auto;
+}
+
+
+.customer > section:nth-child(2) {
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    width: 40vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(to bottom, #2ab2f7 0%, #ffffff 100%);
+}
+
+.customer > section:nth-child(2) > table {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: auto;
+}

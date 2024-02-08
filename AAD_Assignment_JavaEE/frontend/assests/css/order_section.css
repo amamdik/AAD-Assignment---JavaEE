@@ -1,0 +1,148 @@
+.order {
+    position: relative;
+    height: 100vh;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.order > section:first-child {
+    height: 80vh;
+    position: absolute;
+    width: 40vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(to bottom, #fa41b2 0%, #ffffff 100%);
+}
+
+.order > section:nth-child(2) {
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    width: 40vw;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(to bottom, #fa41b2 0%, #ffffff 100%);
+}
+
+.order > section:first-child > img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.order > section:first-child > section {
+    position: absolute;
+    height: fit-content;
+    width: 400px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.order > section:first-child > section > div[class="dropdown"] > button {
+    background: #6c63ff;
+    position: absolute;
+    bottom: 50px;
+    width: 350px;
+}
+
+.order > section:nth-child(2) > form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+#item_id_combo {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    background: #c20578;
+}
+
+#item_desc {
+    width: 200px;
+}
+
+#item_price, #item_qty {
+    width: 100px;
+}
+
+#add_cart, #remove {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    align-content: center;
+    top: 30px;
+}
+
+#buy_qty {
+    width: 80px;
+}
+
+#add_cart {
+    left: 20px;
+}
+
+#remove {
+    left: 40px;
+}
+
+#order_table {
+    position: relative;
+    top: 250px;
+    left: 0;
+    right: 0;
+    width: 550px;
+    margin: auto;
+}
+
+#complete_order{
+    position: absolute;
+    bottom: 40px;
+    left: 250px;
+    margin: auto;
+}
+
+#final_total{
+    width: 150px;
+    margin: auto;
+
+}
+
+#place_ord{
+    position: relative;
+    bottom: 40px;
+    left: 200px;
+    margin: auto;
+}
+
+.order > section:first-child > h1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    margin: 0;
+}
+
+.order > section:first-child > h1[class="display-6"] {
+    position: relative;
+    left: 500px;
+    font-weight: 500;
+}
+
+#btn_recent_orders{
+    position: relative;
+    left: 330px;
+    top: 60px;
+    font-weight: 500;
+}

@@ -1,0 +1,65 @@
+.home {
+    position: relative;
+    height: 100vh;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.home_main {
+    height: 100vh;
+    background: linear-gradient(to bottom, #2c23ac 0%, #ffffff 100%);
+}
+
+.navigation {
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+}
+
+.home > section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+}
+
+.home > section > div > button {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(to bottom, #231c89 0%, #ffffff 100%);
+    color: black;
+}
+
+.home > section > div > button:hover{
+     animation: button_animation 400ms alternate infinite linear;
+ }
+
+@keyframes button_animation {
+    to {
+        color: black;
+        background: linear-gradient(to bottom, #231c89 0%, #ffffff 100%);
+    }
+    from{
+
+        background: linear-gradient(to bottom, #130e7d 0%, #ffffff 100%);
+    }
+}
+
+.home > section > div {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
