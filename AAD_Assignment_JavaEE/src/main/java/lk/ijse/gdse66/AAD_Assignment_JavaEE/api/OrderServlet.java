@@ -3,6 +3,7 @@ package lk.ijse.gdse66.AAD_Assignment_JavaEE.api;
 import jakarta.json.bind.Jsonb;
 import jakarta.json.bind.JsonbBuilder;
 import lk.ijse.gdse66.AAD_Assignment_JavaEE.db.DBConnection;
+import lk.ijse.gdse66.AAD_Assignment_JavaEE.db.Transaction;
 import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.OrderDTO;
 import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.OrderDetailsDTO;
 
@@ -62,10 +63,18 @@ public class OrderServlet extends HttpServlet {
                 !req.getContentType().toLowerCase().startsWith("application/json")) {
             resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
         } else {
-            Jsonb jsonb = JsonbBuilder.create();
-            var orderDTO = jsonb.fromJson(req.getReader(), OrderDTO.class);
-            System.out.println(orderDTO);
-            var dbProcess = new DBConnection();
+
+            try {
+                Jsonb jsonb = JsonbBuilder.create();
+                var orderDTO = jsonb.fromJson(req.getReader(), OrderDTO.class);
+                System.out.println(orderDTO);
+                var dbProcess = new DBConnection();
+
+                var transaction = new Transaction();
+                transaction.orderTransaction(orderDTO, connection);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }
