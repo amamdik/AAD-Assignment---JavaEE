@@ -21,7 +21,7 @@ import java.util.List;
 
 @WebServlet(name = "customer" , urlPatterns = "/customer" ,initParams = {
         @WebInitParam(name = "db-user" , value = "root"),
-        @WebInitParam(name = "db-pw" , value = "ijse1234"),
+        @WebInitParam(name = "db-pw" , value = "ijse123"),
         @WebInitParam(name = "db-url" , value = "jdbc:mysql://localhost:3306/pos?createDatabaseIfNotExist=true"),
         @WebInitParam(name = "db-class" , value = "com.mysql.cj.jdbc.Driver")
 })

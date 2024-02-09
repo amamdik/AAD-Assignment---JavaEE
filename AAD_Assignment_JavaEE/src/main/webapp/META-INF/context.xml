@@ -2,6 +2,6 @@
 <Context path="/">
     <Resource name="jdbc/pos" auth="Container" type="javax.sql.DataSource"
               maxTotal="10" maxIdle="8" maxWaitMillis="-1"
-              username="root" password="ijse1234" driverClassName="com.mysql.cj.jdbc.Driver"
+              username="root" password="ijse123" driverClassName="com.mysql.cj.jdbc.Driver"
               url="jdbc:mysql://localhost:3306/pos"/>
 </Context>
