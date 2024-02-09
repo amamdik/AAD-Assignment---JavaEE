@@ -2,6 +2,8 @@ package lk.ijse.gdse66.AAD_Assignment_JavaEE.db;
 
 import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.CustomerDTO;
 import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.ItemDTO;
+import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.OrderDTO;
+import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.OrderDetailsDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -165,8 +167,6 @@ public class DBConnection {
                 ));
 
             }
-
-
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -195,4 +195,73 @@ public class DBConnection {
             throw new RuntimeException(e);
         }
     }
+
+    public boolean saveOrder(OrderDTO orderDTO, Connection connection) {
+        try {
+            var ps = connection.prepareStatement(SAVE_ORDER);
+            ps.setString(1, orderDTO.getOrder_id());
+            ps.setString(2, orderDTO.getCustomer_id());
+            ps.setString(3, orderDTO.getDate());
+            ps.setString(4, orderDTO.getTotal());
+
+            if (ps.executeUpdate() != 0) {
+                logger.info("Order saved successfully");
+                System.out.println("Data saved");
+                return true;
+            } else {
+                logger.info("Order saving failed");
+                System.out.println("Failed to save");
+                return false;
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public boolean saveOrderDetails(OrderDTO orderDTO, Connection connection){
+        try {
+            var ps = connection.prepareStatement(SAVE_ORDER_DETAILS);
+            for (ItemDTO itemDTO : orderDTO.getItems()) {
+                ps.setString(1, orderDTO.getOrder_id());
+                ps.setString(2, itemDTO.getItem_id());
+                ps.setString(3, itemDTO.getQty());
+
+                if (ps.executeUpdate() == 0) {
+                    logger.info("Order details saving failed");
+                    System.out.println("Failed to save");
+                    return false;
+                }
+            }
+            logger.info("Order details saved successfully");
+            System.out.println("Data saved");
+            return true;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<OrderDetailsDTO> getAllOrders(Connection connection) {
+        List<OrderDetailsDTO> orderDTOS = new ArrayList<>();
+
+        try {
+            var ps = connection.prepareStatement(GET_ALL_ORDERS);
+            ResultSet resultSet = ps.executeQuery();
+
+            while (resultSet.next()) {
+                orderDTOS.add(new OrderDetailsDTO(
+                        resultSet.getString(1),
+                        resultSet.getString(2),
+                        resultSet.getString(3),
+                        resultSet.getString(4)
+                ));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return orderDTOS;
+    }
+
 }
