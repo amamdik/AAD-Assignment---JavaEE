@@ -10,12 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="470d19d8-8570-448a-9610-5a2132fa7245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/api/ItemServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/filter/CORSFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/db/DBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/dto/ItemDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +199,7 @@
       <updated>1707333367458</updated>
       <workItem from="1707333368529" duration="91000" />
       <workItem from="1707366934629" duration="18624000" />
-      <workItem from="1707391440484" duration="9539000" />
+      <workItem from="1707391440484" duration="11031000" />
     </task>
     <task id="LOCAL-00001" summary="frontend programming">
       <option name="closed" value="true" />
@@ -269,7 +265,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707404287735</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="content updated to manage item section">
+      <option name="closed" value="true" />
+      <created>1707438894067</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707438894067</updated>
+    </task>
+    <task id="LOCAL-00010" summary="content updated to manage order section">
+      <option name="closed" value="true" />
+      <created>1707440037352</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707440037352</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +307,8 @@
     <MESSAGE value="adding controller for order detail section" />
     <MESSAGE value="content updated in customer DTO" />
     <MESSAGE value="content updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="content updated" />
+    <MESSAGE value="content updated to manage item section" />
+    <MESSAGE value="content updated to manage order section" />
+    <option name="LAST_COMMIT_MESSAGE" value="content updated to manage order section" />
   </component>
 </project>
