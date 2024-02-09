@@ -1,6 +1,7 @@
 package lk.ijse.gdse66.AAD_Assignment_JavaEE.db;
 
 import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.CustomerDTO;
+import lk.ijse.gdse66.AAD_Assignment_JavaEE.dto.ItemDTO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -117,6 +118,77 @@ public class DBConnection {
             } else {
                 logger.info("Item deleting failed");
                 System.out.println("Failed to delete");
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void saveItem(ItemDTO itemDTO, Connection connection) {
+
+        try {
+            var ps = connection.prepareStatement(SAVE_ITEM);
+            ps.setString(1, itemDTO.getItem_id());
+            ps.setString(2, itemDTO.getDescr());
+            ps.setString(3, itemDTO.getPrice());
+            ps.setString(4, itemDTO.getQty());
+
+            if (ps.executeUpdate() != 0) {
+                logger.info("Item saved successfully");
+                System.out.println("Data saved");
+            } else {
+                logger.info("Item saving failed");
+                System.out.println("Failed to save");
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public List<ItemDTO> getAllItem(Connection connection) {
+        List<ItemDTO> itemDTOS = new ArrayList<>();
+
+        try {
+            var ps = connection.prepareStatement(GET_ALL_ITEMS);
+            ResultSet resultSet = ps.executeQuery();
+
+
+            while (resultSet.next()) {
+
+                itemDTOS.add(new ItemDTO(
+                        resultSet.getString(1),
+                        resultSet.getString(2),
+                        resultSet.getString(3),
+                        resultSet.getString(4)
+                ));
+
+            }
+
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        return itemDTOS;
+    }
+
+    public void updateItem(ItemDTO itemDTO, Connection connection) {
+        try {
+            PreparedStatement ps = connection.prepareStatement(UPDATE_ITEM);
+            ps.setString(1, itemDTO.getDescr());
+            ps.setString(2, itemDTO.getPrice());
+            ps.setString(3, itemDTO.getQty());
+            ps.setString(4, itemDTO.getItem_id());
+
+            if (ps.executeUpdate() != 0) {
+                logger.info("Item updated successfully");
+                System.out.println("Data updated");
+            } else {
+                logger.info("Item updating failed");
+                System.out.println("Failed to update");
             }
 
         } catch (SQLException e) {

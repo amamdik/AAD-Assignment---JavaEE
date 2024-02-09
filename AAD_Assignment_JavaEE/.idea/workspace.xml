@@ -10,13 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="470d19d8-8570-448a-9610-5a2132fa7245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/AAD_Assignment_JavaEE_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/dto/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/api/ItemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/db/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/db/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/dto/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/ijse/gdse66/AAD_Assignment_JavaEE/dto/ItemDTO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +203,7 @@
       <updated>1707333367458</updated>
       <workItem from="1707333368529" duration="91000" />
       <workItem from="1707366934629" duration="18624000" />
-      <workItem from="1707391440484" duration="1560000" />
+      <workItem from="1707391440484" duration="9539000" />
     </task>
     <task id="LOCAL-00001" summary="frontend programming">
       <option name="closed" value="true" />
@@ -254,7 +253,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707388671794</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="content updated in customer DTO">
+      <option name="closed" value="true" />
+      <created>1707393059810</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707393059810</updated>
+    </task>
+    <task id="LOCAL-00008" summary="content updated">
+      <option name="closed" value="true" />
+      <created>1707404287735</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707404287735</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +293,8 @@
     <MESSAGE value="adding controller and model for item section" />
     <MESSAGE value="adding controller and model for order section" />
     <MESSAGE value="adding controller for order detail section" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding controller for order detail section" />
+    <MESSAGE value="content updated in customer DTO" />
+    <MESSAGE value="content updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="content updated" />
   </component>
 </project>
